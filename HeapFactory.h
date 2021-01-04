@@ -3,6 +3,8 @@
 #include <iostream>
 #include <vector>
 
+//self explanatory
+
 class Heap;
 
 class HeapFactory
@@ -17,6 +19,7 @@ public:
 
 private:
 	static std::vector<Heap*> heaps;
+	//used to make sure there are no errors while being in different threads
 	static mutex locked;
 };
 

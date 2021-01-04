@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include "ThreadManager.h"
 
+//heap used for the memory manager
+
 class Heap
 {
 public:

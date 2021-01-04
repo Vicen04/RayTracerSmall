@@ -1,5 +1,6 @@
 #include "HeapFactory.h"
 
+//heaps created, it also checks and locks the program in case this is run in multiple threads to make sure the count is correct
 
 std::vector<Heap*> HeapFactory::heaps;
 mutex HeapFactory::locked;

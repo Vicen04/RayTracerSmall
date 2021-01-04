@@ -1,5 +1,7 @@
 #include "MemoryPool.h"
 
+//memory pool creation, allocation and destruction
+//works with a linked list
 
 int MemoryPool::tSlices, MemoryPool::size;
 vector<Pool*> MemoryPool::mPool;

@@ -28,6 +28,7 @@
 //[/comment]
 #include "Raytracer.h"
 
+//raytracer created in a command prompt, it can read a file created with a custom program found in the repository to make an image
 
 int main(int argc, char **argv)
 {

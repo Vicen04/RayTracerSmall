@@ -1,6 +1,8 @@
 #pragma once
 #include "MemoryPool.h"
 
+//A vector3 that is included in the custom memory manager
+
 static Heap* pHeap = NULL;
 static AllocHeader* head = NULL;
 

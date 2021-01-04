@@ -1,5 +1,6 @@
 #include "Sphere.h"
 
+//Data to be able to render the sphere and perform calculatiosn for the raytracer
 
 Heap* Sphere::pHeap = NULL;
 AllocHeader* Sphere::head = NULL;

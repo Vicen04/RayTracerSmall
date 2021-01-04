@@ -1,6 +1,7 @@
 #include "Heap.h"
 #include <string.h>
 
+//heap created, it stores the amount of memory used
 
 Heap::Heap(const char * name)
 {

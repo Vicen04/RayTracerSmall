@@ -1,9 +1,12 @@
 #include "Global.h"
 #include <cassert>
 
+//memory signature to locate the heap
+
 const int MEMSYSTEM_SIGNATURE = 0xDEADC0DE;
 const int MEMSYSTEM_ENDMARKER = 0xDEADBEEF;
 
+//custom new operator with the marker
  void * operator new (size_t size, Heap * pHeap, AllocHeader** head)
 {
 		 size_t iRequestedBytes = size + sizeof(AllocHeader);
@@ -24,6 +27,7 @@ const int MEMSYSTEM_ENDMARKER = 0xDEADBEEF;
 		 return pStartMemBlock;
 }
 
+ //custom delete operator that checks if the memory has the marker
  void operator delete (void * pMem, int lock)
 {
 	AllocHeader * pHeader =

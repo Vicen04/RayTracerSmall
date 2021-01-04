@@ -1,5 +1,8 @@
 #pragma once
 #include "Global.h"
+
+//memory pool for bigger data
+
 struct Pool
 {
 	bool free = true;
